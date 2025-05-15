@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодное приложение</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Погодное приложение</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Введите город...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="weather-container">
+            <div class="weather-header">
+                <h2 id="city-name">Город не выбран</h2>
+                <p id="current-date">Дата</p>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temperature">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <span id="temp">--</span><span class="unit">°C</span>
+                </div>
+                
+                <div class="weather-details">
+                    <p id="weather-desc">Описание погоды</p>
+                    <p><i class="fas fa-wind"></i> Ветер: <span id="wind">--</span> м/с</p>
+                    <p><i class="fas fa-tint"></i> Влажность: <span id="humidity">--</span>%</p>
+                    <p><i class="fas fa-tachometer-alt"></i> Давление: <span id="pressure">--</span> гПа</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="forecast-container" id="forecast">
+            <!-- Прогноз на 5 дней будет здесь -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
